@@ -1,4 +1,4 @@
-package chp07;
+package chp07_0905;
 
 public class MainDog {
     public static void main(String[] args) {
@@ -15,5 +15,14 @@ public class MainDog {
 
         System.out.printf("d1 => (name: %s, Breed: %s, age: %d)\n", d1.getName(),d1.getBreeds(),d1.getAge());
         System.out.printf("d2 => (name: %s, Breed: %s, age: %d)\n", d2.getName(),d2.getBreeds(),d2.getAge());
+
+        d1.wag();
+        d2.wag();
+        
+        d1.bark();
+        d1.bark(5, "왈왈" );
+        
+        d2.bark();
+        d2.bark(3, "컹컹컹");
     }
 }

@@ -1,4 +1,4 @@
-package chp07;
+package chp07_0905;
 
 public class Dog {
     private String name;
@@ -30,10 +30,14 @@ public class Dog {
     }
 
     public void wag() {
-        System.out.println("살랑살랑");
+        System.out.println(name + "가(이) 살랑살랑 꼬리를 친다");
     }
 
     public void bark() {
-        System.out.println("멍멍");
+        System.out.println("멍멍!");
+    }
+
+    public void bark(int times, String sound) {
+        System.out.printf("%s가(이) %d번 %s 짖는다.\n", this.getName(), times, sound);
     }
 }
